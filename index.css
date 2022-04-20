@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Droid Sans","Droid Sans Mono",sans-serif;
+    background: linear-gradient(-45deg, #ea13ff, #9558be, #ae54e8, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 800% 800%;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.main-container{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    font-size: 1.5rem;
+
+}
+
+.text-container{
+    width: 80%;
+    font-size: 1.5rem;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+li{
+    list-style: none;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    background-image: linear-gradient(180deg, transparent 60%, #d198ff 0);
+    color: black;
+    transition: all 100ms ease-in-out;
+}
+
+a:hover{
+    color: #d198ff;
+    font-style: italic;
+    text-decoration: none;
+    background-image: none;
+    transition: all 100ms ease-in-out;
+}
