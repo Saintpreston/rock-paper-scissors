@@ -10,6 +10,9 @@ let userChoice;
 let computerChoice;
 let result;
 
+let computerWins = 0;
+let userWins = 0
+
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
   computerChoiceDisplay.innerText = ""
   userChoice = e.target.id.toString();
